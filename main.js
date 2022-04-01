@@ -17,6 +17,16 @@ insertZ = ['spontaneously combusted melted into a puddle on the sidewalk turned 
 
 randomize.addEventListener('click', result);
 
+const newStory = storyText ;
+const xItem = randomValueFromArray(insertX) ;
+const yItem = randomValueFromArray(insertY) ;
+const zItem = randomValueFromArray(insertZ) ;
+
+newStory = newStory.replace(':insertx:',xItem);
+newStory = newStory.replace(':insertx:',xItem);
+newStory = newStory.replace(':inserty:',yItem);
+newStory = newStory.replace(':insertz:',zItem);
+
 function result() {
 
   if(customName.value !== '') {
